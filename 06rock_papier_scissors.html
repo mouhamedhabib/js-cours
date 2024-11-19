@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>rock papier siciar</title>
+</head>
+<body>
+  <!-- button rock -->
+  <p>rock papier scisar</p>
+  <button  onclick=" 
+  let computerMove = '' ;
+  const random = Math.random();
+  if (random >= 0 && random < 1/3
+   ){
+       computerMove = ('rock')
+  }else if (random > 1/3 && random < 2/3) {
+    computerMove = ('papier')
+  }else if (random >=  2/3 && random < 1){
+    computerMove = ('scissor')
+  }
+  console.log(computerMove)
+  document.getElementById('p').innerHTML = computerMove;
+  let resulat = '';
+  if (computerMove === 'rock'){
+    resulat = 'tie';
+  }else if (computerMove === 'scisar'){
+      resulat = 'lost'
+  }else if (computerMove === 'papier'){
+    resulat = 'win'
+  }
+  //document.getElementById('p').innerHTML = computerMove;
+  alert(`You picked rock. Computer ${computerMove}. ${resulat}.`)
+  "
+
+   >rock</button>
+
+  <!-- button papier -->
+
+  <button onclick=" 
+  let computerMove = '' ;
+  const random = Math.random();
+  if (random >= 0 && random < 1/3
+   ){
+       computerMove = ('rock')
+  }else if (random > 1/3 && random < 2/3) {
+    computerMove = ('papier')
+  }else if (random >=  2/3 && random < 1){
+    computerMove = ('scissor')
+  }
+  console.log(computerMove)
+  document.getElementById('p').innerHTML = computerMove;
+  let resulat = '';
+  if (computerMove === 'rock'){
+    resulat = 'win';
+  }else if (computerMove === 'scisar'){
+      resulat = 'lose'
+  }else if (computerMove === 'papier'){
+    resulat = 'tie'
+  }
+  //document.getElementById('p').innerHTML = computerMove;
+  alert(` picked papier. Computer ${computerMove}. user ${resulat}.`)
+  "
+  >papier</button>
+     
+     <!-- button sicsor -->
+
+
+  <button onclick=" 
+  let computerMove = '' ;
+  const random = Math.random();
+  if (random >= 0 && random < 1/3
+   ){
+       computerMove = ('rock')
+  }else if (random > 1/3 && random < 2/3) {
+    computerMove = ('papier')
+  }else if (random >=  2/3 && random < 1){
+    computerMove = ('scissor')
+  }
+  console.log(computerMove)
+  document.getElementById('p').innerHTML = computerMove;
+  let resulat = '';
+  if (computerMove === 'rock'){
+    resulat = 'lose';
+  }else if (computerMove === 'scisar'){
+      resulat = 'tie'
+  }else if (computerMove === 'papier'){
+    resulat = 'win'
+  }
+  //document.getElementById('p').innerHTML = computerMove;
+  alert(` picked scissor. Computer ${computerMove}. user ${resulat}.`)
+  "
+  >scisor</button>
+  <p id="p"></p>
+  <script>
+  </script>
+</body>
+</html>

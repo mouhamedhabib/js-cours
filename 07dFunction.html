@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function convertToFahrenheit(celsis){
+      return (celsis*9/5)+32;
+    }
+
+    function convertToCelsius(fahrenheit){
+      return (fahrenheit-32)*5/9;
+    }
+
+    function convertTemperature(degrees , unit){
+      if (unit === 'c'){
+        const result = convertTemperature(degrees)
+        return `${result}f`
+      }else if (degrees === 'f'){
+         
+        const result = convertTemperature(unit)
+        return `${result}c`
+      }
+    
+  }
+    console.log (convertToFahrenheit(25 ,'c'))
+    console.log (convertToCelsius(86,'f'))
+   
+
+   
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+  function convertToCelsius(fahrenheit){  
+      return celsius = (fahrenheit - 32) * 5/9 ;
+    }
+   console.log(convertToCelsius(86));
+
+   function convert (degrees , unit ){
+    if (unit === 'c'){
+      const result = convertToFahrenheit(degrees)
+      return `${result}F`;
+      
+    } else if (unit === 'f') {
+     
+      const result = convertToCelsius(unit)
+      return `${result}c`;
+    }
+   }
+   
+
+  console.log(convert(25, 'c'));
+  console.log(convert(86, 'f'));
+</script> -->

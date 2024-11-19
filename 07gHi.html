@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    // function converLength(length , from ,to){
+    //   if (from ==="km" && to ==="miles"){
+    //     let  miles = length *0.621371
+    //       return Math.floor ( miles );
+    //   }else if (from ==="miles" && to ==="km"){
+    //    let km = length /1.621371
+    //     return Math.ceil( km ) ;
+    //   }
+    // }
+    // console.log (converLength (50, 'km' , 'miles'))
+    // console.log (converLength (32, 'miles' , 'km'))
+
+    function converLength(length , from , to){
+      if (from !== 'km' && from !== 'miles' && from !== 'ft'){
+        return `invalid unit ${from}`
+      }
+
+      if (to !== 'miles' && to !== 'km' && to !== 'ft'){
+        return `invalid unit ${to}`
+      }
+
+      if(from === 'km' && to === 'miles'){
+      return `${length/1.6}miles`
+    }
+    else if (from === 'miles' && to === 'km'){
+      return `${length*1.6}km`
+    }else if (from === to){
+      return `${length} ${to} `
+    }
+
+    else if (from === 'moles' && to === 'km'){
+      return `${length * 1.6} ${to} `
+    }
+
+    else if (from === 'miles' && to === 'ft'){
+      return `${length * 5280} ${to} `
+    }
+
+    else if (from === 'ft' && to === 'km'){
+      return `${length / 3280}  ${to}  `
+    }
+
+    else if (from === 'ft' && to === 'miles'){
+      return `${length / 5280}  ${to}  `
+    }
+
+    else if (from ===  to){
+      return `${length}  ${to}  `
+    }
+  }
+
+      console.log(converLength(50, 'miles', 'km'));
+      console.log(converLength(32, 'km', 'miles'));
+      console.log(converLength(50, 'km', 'km'));
+
+      console.log(converLength(5, 'miles', 'km'));
+      console.log(converLength(5, 'miles', 'ft'));
+      console.log(converLength(5, 'km', 'ft'));
+      console.log(converLength(5, 'lbs', 'lbs'));
+
+
+  </script>
+</body>
+</html>
