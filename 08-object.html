@@ -7,15 +7,33 @@
 </head>
 <body>
   <script>
-const product ={
-  name: "ball",
-  price: 17
+const product = {
+  name : "cesar" , // property value pair 
+  price : 18, // price = property 
+  'size':'xl',
+  rating :{
+    etoile : '4 start',
+    vote:87
+  }
 }
+
 console.log(product)
 console.log(product.name)
 console.log(product.price)
+console.log(name="mme")
 product.name = "nike"
+product.price = 26
 console.log(product)
+delete product.name
+console.log(product)
+product.newPropeerty = "name"
+console.log(product)
+product.name = "nike"
+delete product.newPropeerty
+console.log(typeof product)
+console.log(`your price ${product.price}`)
+console.log(product.rating.etoile)
+console.log(product['size'])
   </script>
 </body>
 </html>
