@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom pr 3</title>
+</head>
+<body>
+  <h3>Amazone Shipping Calculator</h3>
+  <p>order under $40 = +$10 Shipping</p>
+  <p>Order over $40 = Free Shipping</p>
+  <input class="js-input" onkeydown="console.log(event.key)
+    handlecost(event)
+  
+  " type="text" placeholder="Cost of order"  >
+  <button onclick="Calculate()">Calculater</button>
+      
+  <p class="js-total-cost "></p>
+
+  <script>
+    console.log(window)
+    function handlecost(event){
+      if (event.key === 'Enter'){
+        Calculate()
+    }
+  }
+
+    function Calculate(){
+      const getElement = document.querySelector('.js-input')
+      let cost = Number(getElement.value)
+       
+      if (cost < 40){
+       cost=cost +10;
+      }
+
+      document.querySelector('.js-total-cost').innerHTML = `$${cost}`
+      
+    }
+  </script>
+</body>
+</html>

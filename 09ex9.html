@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9ex</title>
+</head>
+<body>
+  <!-- <button class="bts1">9a</button>
+  <button class="bts2">9b</button> -->
+
+  <!-- 9c -->
+   
+  <!-- <button class="bts1" onclick="btn('heads')" >heads</button>
+  <button class="bts2" onclick="btn('tails')" >tails</button>
+  <p class="para"></p> -->
+
+  <!-- 9d -->
+   <input type="text" class="js-input" onkeyup="Handclick()" >
+    <button class="btn" onclick="Handclick()"  >sumbit</button>
+   <p class="pa"></p>
+
+  <script>
+      //9d
+     function handleconst(event){
+        if(event.key === 'Enter'){
+        const getElement = document.querySelector('.js-input')
+        let cost = String(getElement.value)
+        document.querySelector('.pa').innerHTML=cost
+      }
+     }
+
+     function Handclick(){
+      const getElement = document.querySelector('.js-input')
+        let cost = String(getElement.value)
+        document.querySelector('.pa').innerHTML=cost
+     }
+    //9c
+    // function btn(click){
+    //   if (click === 'heads'){
+    //     document.querySelector('.para').innerHTML='you click heads'
+    //   }else if (click === 'tails'){
+    //     document.querySelector('.para').innerHTML='you click taols'
+
+    //   }
+    // }
+
+    //9a 9b
+  // console.log(document.querySelector('.bts1')) 
+  // document.querySelector('.bts2').innerHTML='9b done'
+  </script>
+</body>
+</html>

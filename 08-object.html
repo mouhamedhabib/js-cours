@@ -7,6 +7,7 @@
 </head>
 <body>
   <script>
+    /*
 const product = {
   name : "cesar" , // property value pair 
   price : 18, // price = property 
@@ -14,6 +15,9 @@ const product = {
   rating :{
     etoile : '4 start',
     vote:87
+  },
+  fun: function function1(){
+    console.log("hello from inside fun") // when we save function inside object we call this method
   }
 }
 
@@ -34,6 +38,53 @@ console.log(typeof product)
 console.log(`your price ${product.price}`)
 console.log(product.rating.etoile)
 console.log(product['size'])
+product.fun()
+// to convert object to json we use stringify to opposite use parse ex Json.stringinfy or json.parse
+
+console.log (JSON.stringify(product))
+
+const opposite = JSON.stringify(product)
+
+console.log(JSON.parse(opposite)) */
+
+console.log('hello'.length);
+console.log('hello'.toUpperCase())
+
+const object1= {
+  message:'hello'
+}
+const object2=object1
+console.log(object2)
+console.log(object1)
+object1.message = "good moring"
+console.log(object1)
+
+const object3 ={
+  message:'hello'
+}
+console.log(object1===object3)
+console.log(object1===object2)
+
+//const message = object1.message
+const {message}=object1 // this short cut for this line const message = object1.message
+console.log(message)
+
+const object5 = {
+  //message : message // we can change this code with message and we call that shorthand proporety 
+  message ,
+  //method: function function1(){
+    //console.log('method')}
+   // we can change method function with shortcutHand
+  method(){
+    console.log('method')
+  }
+}
+
+  
+//object5.method()
+console.log(object5)
+
+
   </script>
 </body>
 </html>
